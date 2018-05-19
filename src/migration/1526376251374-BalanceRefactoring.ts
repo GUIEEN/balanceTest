@@ -82,12 +82,6 @@ export class BalanceRefactoring1526354141714 implements MigrationInterface {
       ]
     }), true, true)
 
-    // NOTE :: In this case, query goes totally different from the above
-    // await queryRunner.createForeignKey('balance', new TableForeignKey({
-    //   columnNames: ['logId'],
-    //   referencedColumnNames: ['id'],
-    //   referencedTableName: 'log'
-    // }))
   }
 
   public async down (queryRunner: QueryRunner): Promise<any> {
